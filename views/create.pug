@@ -1,8 +1,8 @@
 extends layout.pug
 
+
 block content
-    include includes/form-errors.pug
     h2 Create User
     form(method='post', action="/create")
         include includes/create-layout.pug
-        input(type="Submit" value="Create User")
+        input(type="submit" value="Create User")

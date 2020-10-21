@@ -1,4 +1,15 @@
+//- mixin formGroup(type, name, value, label)
+//-     div 
+//-         label(for=name) #{label}
+//-         input(type=type name=name value=value)
+
 input(type="hidden" name="_csrf" value=csrfToken)
+
+//- +formGroup("text", "firstName", firstName, "First Name" )
+
+
+
+
 label(for='firstName') First Name
 input(type='text', name='firstName' value=firstName)
 label(for='lastName') Last Name
@@ -9,3 +20,6 @@ label(for='password') Password
 input(type='password', name='password')
 label(for='confirmedPassword') Confirm Password
 input(type='password', name='confirmedPassword')
+label(for="submit") Submit
+//- input(type="submit" value="Create User")
+
